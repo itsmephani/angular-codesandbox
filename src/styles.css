@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+.tooltip-container {
+  position: relative;
+  background: orange;
+}
+
+.tooltip {
+  display: none;
+  margin-top: 4px;
+}
+
+.tooltip::before {
+  content: "";
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  position: absolute;
+  left: 48%;
+  top: -8px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid #0a0a0a;
+}
+
+.tooltip-container:hover .tooltip {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.88);
+  border-radius: 4px;
+  color: white;
+  content: attr(aria-label);
+  padding: 4px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
