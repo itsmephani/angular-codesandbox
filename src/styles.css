@@ -7,7 +7,7 @@ body {
 
 .tooltip-container {
   position: relative;
-  background: orange;
+  border: 1px solid black;
 }
 
 .tooltip {
@@ -31,7 +31,6 @@ body {
   background-color: rgba(0, 0, 0, 0.88);
   border-radius: 4px;
   color: white;
-  content: attr(aria-label);
   padding: 4px;
   position: absolute;
   left: 0;
